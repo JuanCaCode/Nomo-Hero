@@ -80,13 +80,24 @@ body {
 }
 @keyframes tapete {
   0% {
-    width: 42%;
+    transform: translate(-50%, -50%) scale(100%);
   }
   50% {
-    width: 52%;
+    transform: translate(-50%, -50%) scale(130%);
   }
   100% {
-    width: 42%;
+    transform: translate(-50%, -50%) scale(100%);
+  }
+}
+@keyframes tapeteSmall {
+  0% {
+    transform: translate(-50%, -50%) scale(190%);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(230%);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(190%);
   }
 }
 @keyframes caritas {
@@ -140,7 +151,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
 .full-section-center .left-up-text {
   align-self: flex-start;
@@ -425,6 +435,7 @@ body {
   }
   .full-section-center .design-title .ancla {
     bottom: 125px;
+    display: none;
   }
   .full-section-center .design-title h1 {
     font-size: 8rem;
@@ -451,6 +462,7 @@ body {
     width: 52%;
     top: 50%;
     left: 50%;
+    animation: tapeteSmall 10s infinite;
   }
   .full-section-center .center_middle .nomo_back {
     width: 48%;
@@ -502,6 +514,9 @@ body {
   }
 }
 @media (max-width: 600px) and (min-height: 500px) {
+  .full-section-center {
+    padding-bottom: 50px;
+  }
   .full-section-center .left-up-text {
     font-size: 1rem;
     -webkit-margin-before: 10px;
@@ -515,12 +530,12 @@ body {
     z-index: 2;
   }
   .full-section-center .design-title .ancla {
-    bottom: 150px;
+    bottom: 190px;
     font-size: 1rem;
   }
   .full-section-center .design-title h1 {
     font-size: 8rem;
-    bottom: 60px;
+    bottom: 100px;
   }
   .full-section-center .design-title h1::after {
     left: -21px;
@@ -594,6 +609,9 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .full-section-center {
+    padding-bottom: 50px;
+  }
   .full-section-center .left-up-text {
     font-size: 0.8rem;
   }
@@ -626,9 +644,11 @@ body {
     left: 40%;
   }
   .full-section-center .center_middle .ajedrez {
-    width: 102%;
+    width: 52%;
+    z-index: 1;
     top: 50%;
     left: 50%;
+    animation: tapeteSmall 10s infinite;
   }
   .full-section-center .center_middle .nomo_back {
     width: 88%;
@@ -807,7 +827,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  padding-right: 2rem;
 }
 .full-section__right .right-side p {
   padding: 2rem;
@@ -872,6 +891,7 @@ body {
     width: auto;
     padding-right: 0;
     z-index: 2;
+    padding-right: 2rem;
   }
   .full-section__right .right-side p {
     font-size: 1rem;

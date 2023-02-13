@@ -22,13 +22,24 @@
 }
 @keyframes tapete {
     0%{
-        width: 42%;
+        transform:translate(-50%, -50%) scale(100%)
     }
     50%{
-        width: 52%;
+        transform:translate(-50%, -50%) scale(130%)
     }
     100%{
-        width: 42%;
+        transform:translate(-50%, -50%) scale(100%)
+    }
+}
+@keyframes tapeteSmall {
+    0%{
+        transform:translate(-50%, -50%) scale(190%)
+    }
+    50%{
+        transform:translate(-50%, -50%) scale(230%)
+    }
+    100%{
+        transform:translate(-50%, -50%) scale(190%)
     }
 }
 @keyframes caritas {

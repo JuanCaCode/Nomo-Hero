@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-end;
     height: 100vh;
-    
     .right-side{
         width: 200px;
         height: 100vh;
@@ -11,7 +10,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        padding-right: 2rem;
         p{
             padding: 2rem;
             margin-block-end: 100%;
@@ -81,6 +79,7 @@
             width: auto;
             padding-right: 0;
             z-index: 2;
+            padding-right: 2rem;
             p{
                 font-size: 1rem;
                 padding: 2rem 1rem 0rem 0rem;
@@ -96,6 +95,7 @@
 @media (max-width:400px){
     .full-section__right{
         .right-side{
+
             p{
                 font-size: 0.8rem;
             }
