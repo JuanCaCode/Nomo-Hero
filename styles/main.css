@@ -55,16 +55,16 @@ body {
 }
 @keyframes nomoUpDown {
   0% {
-    top: 50%;
+    top: 43%;
   }
   25% {
-    top: 53%;
+    top: 50%;
   }
   75% {
-    top: 47%;
+    top: 38%;
   }
   100% {
-    top: 50%;
+    top: 43%;
   }
 }
 @keyframes pills {
