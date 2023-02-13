@@ -140,6 +140,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .full-section-center .left-up-text {
   align-self: flex-start;
@@ -607,7 +608,7 @@ body {
   }
   .full-section-center .design-title h1 {
     font-size: 6rem;
-    bottom: 60px;
+    bottom: 100px;
   }
   .full-section-center .design-title h1::after {
     width: 80px;
@@ -801,6 +802,7 @@ body {
 .full-section__right .right-side {
   width: 200px;
   height: 100vh;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
